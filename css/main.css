@@ -67,9 +67,38 @@ textarea {
     --transition-speed: .5s;
 }
 
+@font-face{
+    font-family: oswald;
+    src: url(../font/oswald-regular.ttf);
+    font-weight: regular;
+}
+
+@font-face{
+    font-family: oswald;
+    src: url(../font/oswald-bold.ttf);
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: oswald;
+    src: url(../font/oswald-lightitalic.ttf);
+    font-weight: italic;
+}
+
 body{
     margin-top: 6rem;
     background-color: var(--off-white);
+}
+
+h1 {
+    font-family: oswald;
+    text-transform: uppercase;
+}
+
+b {
+    font-family: oswald;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 a {
@@ -98,12 +127,17 @@ nav {
 nav ul {
     padding: 0 !important;
     margin: 0;
+    margin-left: .3rem;
 }
 
 nav ul li{
-    list-style-type: none;
     display: inline-flex;
-    padding: 1.5rem .8rem 1.5rem .8rem;
+    list-style-type: none;
+    font-family: oswald;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
 }
 
 nav ul li a {
